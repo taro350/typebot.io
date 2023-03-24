@@ -4,6 +4,7 @@ Dockerfile
 npm-debug.log
 README.md
 .next
+.next/routes-manifest.json
 .git
 .github
 .turbo
