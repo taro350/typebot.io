@@ -10,6 +10,7 @@ const nextConfig = {
     '@typebot.io/emails',
   ],
   output: 'standalone',
+  distDir: '.next',
   experimental: {
     outputFileTracingRoot: path.join(__dirname, '../../'),
   },
