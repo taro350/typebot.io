@@ -1,4 +1,4 @@
-import { PublicTypebot as PrismaPublicTypebot } from '@typebot.io/prisma'
+import { type PublicTypebot as PrismaPublicTypebot } from '@typebot.io/prisma'
 import {
   groupSchema,
   edgeSchema,

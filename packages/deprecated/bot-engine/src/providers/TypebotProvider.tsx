@@ -1,7 +1,7 @@
 import { TypebotViewerProps } from '@/components/TypebotViewer'
 import { safeStringify } from '@/features/variables'
 import { sendEventToParent } from '@/utils/chat'
-import { Log } from '@typebot.io/prisma'
+import { type Log } from '@typebot.io/prisma'
 import { Edge, PublicTypebot, Typebot, Variable } from '@typebot.io/schemas'
 import {
   createContext,

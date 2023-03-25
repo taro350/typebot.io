@@ -1,4 +1,4 @@
-import { Log } from '@typebot.io/prisma'
+import { type Log } from '@typebot.io/prisma'
 import {
   Edge,
   Group,

@@ -2,7 +2,10 @@ import { z } from 'zod'
 import { answerInputSchema, answerSchema } from './answer'
 import { InputBlockType } from './blocks'
 import { variableWithValueSchema } from './typebot/variable'
-import { Result as ResultPrisma, Log as LogPrisma } from '@typebot.io/prisma'
+import {
+  type Result as ResultPrisma,
+  type Log as LogPrisma,
+} from '@typebot.io/prisma'
 
 export const resultSchema = z.object({
   id: z.string(),

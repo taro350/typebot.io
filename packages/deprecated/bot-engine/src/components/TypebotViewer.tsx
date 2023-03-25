@@ -12,7 +12,7 @@ import {
   PublicTypebot,
   VariableWithValue,
 } from '@typebot.io/schemas'
-import { Log } from '@typebot.io/prisma'
+import { type Log } from '@typebot.io/prisma'
 import { LiteBadge } from './LiteBadge'
 import { getViewerUrl, isEmpty, isNotEmpty } from '@typebot.io/lib'
 

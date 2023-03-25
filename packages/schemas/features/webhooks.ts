@@ -1,4 +1,4 @@
-import { Webhook as WebhookFromPrisma } from '@typebot.io/prisma'
+import { type Webhook as WebhookFromPrisma } from '@typebot.io/prisma'
 
 export enum HttpMethod {
   POST = 'POST',

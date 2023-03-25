@@ -2,7 +2,7 @@ import { z } from 'zod'
 import { settingsSchema } from './settings'
 import { themeSchema } from './theme'
 import { variableSchema } from './variable'
-import { Typebot as TypebotPrisma } from '@typebot.io/prisma'
+import { type Typebot as TypebotPrisma } from '@typebot.io/prisma'
 import { blockSchema } from '../blocks/schemas'
 
 export const groupSchema = z.object({

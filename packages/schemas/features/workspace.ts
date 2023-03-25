@@ -1,12 +1,11 @@
 import { z } from 'zod'
 import {
-  Workspace as WorkspacePrisma,
-  Plan,
-  MemberInWorkspace as MemberInWorkspacePrisma,
-  WorkspaceRole,
-  User as UserPrisma,
-  WorkspaceInvitation as WorkspaceInvitationPrisma,
+  type Workspace as WorkspacePrisma,
+  type MemberInWorkspace as MemberInWorkspacePrisma,
+  type User as UserPrisma,
+  type WorkspaceInvitation as WorkspaceInvitationPrisma,
 } from '@typebot.io/prisma'
+import { Plan, WorkspaceRole } from '@typebot.io/prisma'
 
 export const workspaceMemberSchema = z.object({
   workspaceId: z.string(),

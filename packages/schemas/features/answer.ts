@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { Answer as AnswerPrisma, Prisma } from '@typebot.io/prisma'
+import { type Answer as AnswerPrisma, Prisma } from '@typebot.io/prisma'
 
 export const answerSchema = z.object({
   createdAt: z.date(),
