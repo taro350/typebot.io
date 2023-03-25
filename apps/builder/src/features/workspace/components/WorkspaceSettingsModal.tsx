@@ -15,7 +15,8 @@ import {
   UsersIcon,
 } from '@/components/icons'
 import { EmojiOrImageIcon } from '@/components/EmojiOrImageIcon'
-import type { User, Workspace, WorkspaceRole } from '@typebot.io/prisma'
+import { type User, Workspace } from '@typebot.io/prisma'
+import { WorkspaceRole } from '@typebot.io/prisma'
 import { useState } from 'react'
 import { MembersList } from './MembersList'
 import { WorkspaceSettingsForm } from './WorkspaceSettingsForm'
