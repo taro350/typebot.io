@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { type Answer } from '@typebot.io/prisma'
+import { Answer as AnswerPrisma, Prisma } from '@typebot.io/prisma'
 
 export const answerSchema = z.object({
   createdAt: z.date(),
@@ -9,7 +9,7 @@ export const answerSchema = z.object({
   variableId: z.string().nullable(),
   content: z.string(),
   storageUsed: z.number().nullable(),
-}) satisfies z.ZodType<Answer>
+}) satisfies z.ZodType<AnswerPrisma>
 
 export const answerInputSchema = answerSchema
   .omit({
@@ -23,7 +23,7 @@ export const answerInputSchema = answerSchema
       variableId: z.string().nullish(),
       storageUsed: z.number().nullish(),
     })
-  ) satisfies z.ZodType<Answer>
+  ) satisfies z.ZodType<Prisma.AnswerUncheckedUpdateInput>
 
 export type Stats = {
   totalViews: number
